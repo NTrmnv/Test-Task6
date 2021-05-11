@@ -3,7 +3,7 @@ import './employees.css';
 
 import EmployeesServise from '../../services/employeesServise';
 
-import AddRemoveItem from '../addRemoveItem';
+import AddItem from '../addItem';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrashAlt } from '@fortawesome/free-solid-svg-icons'
@@ -87,7 +87,7 @@ export default class Employees extends Component {
             {items}    
           </ul>
 
-          <AddRemoveItem
+          <AddItem
             onItemAdded = { this.addItem }/>
         </React.Fragment>
       );
